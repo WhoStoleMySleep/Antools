@@ -1,0 +1,237 @@
+.testimonial {
+  max-width: 1244px;
+  min-height: 492px;
+  padding: 0 20px;
+  position: relative;
+
+  &__slide-container {
+    max-width: 850px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  &__image-col {
+    max-width: 399px;
+    height: 492px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 43px;
+      height: 43px;
+      position: absolute;
+      background: #B345F1;
+      filter: blur(35px);
+      border-radius: 43px;
+      top: 170px;
+      left: 40px;
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      width: 65px;
+      height: 65px;
+      position: absolute;
+      background: rgba(255, 110, 48, 0.7);
+      filter: blur(50px);
+      border-radius: 65px;
+      top: 351px;
+      right: 52px;
+      z-index: 1;
+    }
+  }
+
+  &__image {
+    margin-left: 8px;
+    z-index: 3;
+    position: relative;
+  }
+
+  &__image-badge {
+    background: rgba(40, 48, 54, 0.2);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
+    position: absolute;
+    top: 372px;
+    padding: 10px 23px 16px 22px;
+    right: 0;
+    overflow: hidden;
+    z-index: 4;
+    cursor: default;
+
+    &::after {
+      content: '';
+      width: 23px;
+      height: 23px;
+      position: absolute;
+      background: #007ACC;
+      filter: blur(18px);
+      border-radius: 23px;
+      bottom: 0;
+      right: 2px;
+    }
+  }
+
+  &__name {
+    font-size: 26px;
+    letter-spacing: 0.015em;
+    line-height: 39px;
+    color: rgba(255, 253, 253, 0.78);
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  &__additional {
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__bg-mask {
+    display: flex;
+    position: absolute;
+    top: 87px;
+    width: 380px;
+    height: 380px;
+    justify-content: center;
+  }
+
+  &__bg-mask-1 {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background: rgba(40, 48, 54, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(50px);
+    border-radius: 380px;
+    z-index: 0;
+  }
+  
+  &__bg-mask-2 {
+    margin: calc(380px / 2 - 305.65px / 2) 0;
+    width: 305.65px;
+    height: 305.65px;
+    background: rgba(40, 48, 54, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(50px);
+    border-radius: 305.65px;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  &__bg-mask-3 {
+    margin: calc(380px / 2 - 231.3px / 2) auto;
+    width: 231.3px;
+    height: 231.3px;
+    background: #283036;
+    border-radius: 231.3px;
+    position: absolute;
+    z-index: 2;
+  }
+
+  &__text-col {
+    max-width: 394px;
+    display: flex;
+    position: relative;
+    margin-top: 110px;
+    padding: 0;
+    cursor: default;
+    
+    &::before {
+      content: '“';
+      font-size: 250px;
+      font-family: 'Lora';
+      position: absolute;
+      top: -89px;
+      left: -70px;
+      background: linear-gradient(188.88deg, rgba(252, 252, 252, 0) 20.34%, rgba(255, 255, 255, 0.5) 155.72%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      transform: rotate(19.17deg);
+    }
+
+    p {
+      font-family: 'Roboto';
+      font-size: 14px;
+      letter-spacing: 0.015em;
+      color: rgba(255, 255, 255, 0.78);
+    }
+  }
+}
+
+.swiper {
+  min-height: 600px;
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 80px;
+    height: 100px;
+    background: transparent;
+    border-radius: 8px;
+    top: 214px;
+
+    &::after {
+      font-size: 24px;
+      font-weight: 1000;
+      color: #FF6E30;
+    }
+  }
+
+  .swiper-button-disabled {
+    &::after {
+      color: rgba(255, 255, 255, 0.28);
+    }
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+
+    .swiper-pagination-bullet {
+      width: 44px;
+      height: 8px;
+      background: #283036;
+      border-radius: 4px;
+      margin: 0;
+      padding: 0;
+      margin-left: 18px;
+
+      &:first-child {
+        margin: 0;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #FF6E30;
+    }
+  }
+}
+
+@media all and (max-width: 775px) {
+  .testimonial {
+    &__image {
+      margin: 0 auto;
+    }
+
+    &__slide-container {
+      display: block;
+    }
+
+    &__image-col {
+      margin: 0 auto;
+    }
+
+    &__text-col {
+      margin: 40px auto;
+    }
+  }
+
+  .swiper {
+    .swiper-button-next,
+    .swiper-button-prev {
+      top: 60%;
+    }
+  }
+}

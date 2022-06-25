@@ -1,0 +1,84 @@
+@import '../../mixins.scss';
+
+.newcomer {
+  padding-top: 20px;
+  max-width: 1244px;
+  padding: 0 20px;
+  display: flex;
+
+  @include text-appearance-animation('visibled', 'newcomer__headed', 350ms, 0);
+  @include text-appearance-animation('visibled', 'newcomer__additional', 350ms, 250ms);
+  @include text-appearance-animation('visibled', 'button', 250ms, 0);
+  @include text-appearance-animation('visibled', 'newcomer__cards', 350ms, 500ms);
+
+  &.visibled {
+    .newcomer__cards {
+      gap: 24px 50px;
+    }
+  }
+
+  &__text-col {
+    max-width: 427px;
+    cursor: default;
+
+    .button {
+      margin-top: 60px;
+      cursor: pointer;
+    }
+  }
+
+  &__headed {
+    margin: 0;
+  }
+
+  &__additional {
+    margin-top: 30px;
+  }
+  
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 104px 50px;
+    max-width: 626px;
+    margin-left: auto;
+    justify-content: center;
+
+    .card {
+      width: 288px;
+      height: 284px;
+      font-size: 14px;
+
+      button {
+        transition: none;
+        transition: background 250ms opacity 250ms;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 1093px) {
+  .newcomer {
+    display: block;
+
+    &__text-col {
+      text-align: center;
+      margin: {
+        left: auto;
+        right: auto;
+      };
+
+      .button {
+        margin: {
+          left: auto;
+          right: auto;
+        };
+      }
+    }
+
+    &__cards {
+      margin-top: 20px;
+      margin-right: auto;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import '../../mixins.scss';
+
+.popular {
+  min-height: 1309px;
+  max-width: 1244px;
+  padding: 0 20px;
+
+  @include text-appearance-animation('visibled', 'popular__headed', 350ms, 0);
+  @include text-appearance-animation('visibled', 'popular__additional', 350ms, 250ms);
+  @include text-appearance-animation('visibled', 'popular__card-container', 350ms, 500ms);  
+
+  &.visibled {
+    .popular__card-container {
+      row-gap: 100px;
+    }
+  }
+
+  &__headed,
+  &__additional {
+    text-align: center;
+    margin: 0;
+    cursor: default;
+  }
+
+  &__additional {
+    max-width: 427px;
+    margin: 25px auto 0 auto;
+  }
+
+  &__card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    column-gap: 24px;
+    row-gap: 200px;
+    margin-top: 110px;
+  }
+
+  &__more {
+    display: block;
+    background: #1E252B;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #FF6E30; 
+    padding: 17px 38px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    transition-duration: 150ms;
+    margin: 100px auto 0 auto;
+
+    &:hover {
+      background: #FF6E30;
+      color: #FFFFFF;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.brands {
+  max-width: 1224px;
+  min-height: 253px;
+  background: rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(50px);
+  border-radius: 25px;
+  padding-top: 55px;
+  padding-bottom: 56px;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -86px;
+    left: -84px;
+    width: 159px;
+    height: 159px;
+    border-radius: 25px;
+    background: rgba(255, 72, 66, 0.4);
+    filter: blur(100px);
+  }
+
+  &__text {
+    margin: 0 auto;
+    text-align: center;
+    cursor: default;
+  }
+
+  &__brand {
+    max-width: 1079px;
+    min-height: 106px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  &__microsoft {
+    width: 193px;
+    height: 42px;
+    vertical-align: middle;
+    margin-top: calc(162px / 2 - 21px);
+  }
+
+  &__google {
+    width: 157px;
+    height: 51px;
+    vertical-align: middle;
+    margin-top: calc(162px / 2 - 25.5px);
+  }
+
+  &__slack {
+    width: 194px;
+    height: 49px;
+    vertical-align: middle;
+    margin-top: calc(162px / 2 - 24.5px);
+  }
+
+  &__wordpress {
+    width: 194px;
+    height: 44px;
+    vertical-align: middle;
+    margin-top: calc(162px / 2 - 22px);
+  }
+}
+
+@media all and (max-width: 840px) {
+  .brands {
+    &__brand {
+      justify-content: center;
+      gap: 0 107px;
+    }
+  }
+}

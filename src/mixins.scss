@@ -1,0 +1,17 @@
+@mixin text-appearance-animation($start-class, $class-name, $duration: 450ms, $delay: 0) {
+  &.#{$start-class} {
+    .#{$class-name} {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .#{$class-name} {
+    top: 200px;
+    position: relative;
+    opacity: 0;
+    transition-property: top opacity;
+    transition-duration: $duration;
+    transition-delay: $delay;
+  }
+}

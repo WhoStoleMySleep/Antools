@@ -1,0 +1,17 @@
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  background: none;
+  color: rgba(255, 255, 255, 0.78);
+  border: none;
+  border-radius: 8px;
+  transition-duration: 250ms;
+  white-space: nowrap;
+  opacity: 0.78;
+
+  &:hover {
+    background: #FF6E30;
+    color: #FDF5FF;
+    opacity: 1;
+  }
+}

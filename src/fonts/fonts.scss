@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('./Poppins/Poppins.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  src: url('./MaterialIcons/MaterialIcons-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: normal;
+  font-display: block; 
+}
+
+@font-face {
+  font-family: 'Font Awesome';
+  src:  url('./Font-Awesome/font-awesome.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src:  url('./Roboto/Roboto.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src:  url('./Lora/Lora.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
