@@ -9,7 +9,7 @@
 
 <br>
 <p align="center">
-Site onestanichnik picking tools for designers and developers.
+A one-station site for selecting tools for designers and developers.
 </p>
 
 <br>
