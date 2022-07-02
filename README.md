@@ -9,7 +9,7 @@
 
 <br>
 <p align="center">
-A one-station site for selecting tools for designers and developers.
+A one-page site for choosing tools for designers and developers.
 </p>
 
 <br>
