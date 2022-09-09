@@ -20,13 +20,3 @@ A one-page site for choosing tools for designers and developers.
 
 ### Animations
 - The animations were written from scratch in css. On reloading, these animations do not replay if the page has been fully scrolled.
-
-<br>
-
-## Plugins
-
-<br>
-
-### Swiper.js
-- 'Swiper is the most modern free mobile touch slider with hardware accelerated transitions and amazing native behavior'.
-The plugin is used in the reviews component.
